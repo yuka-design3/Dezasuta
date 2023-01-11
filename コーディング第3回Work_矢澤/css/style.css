@@ -60,7 +60,6 @@ body {
 }
 
 .box {
-    list-style: none;
     background-color: #eee;
     max-width: 960px;
     margin: 0 auto;
