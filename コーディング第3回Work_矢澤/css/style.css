@@ -88,16 +88,18 @@ p {
     font-weight: 500;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
     .title {
         justify-content: center;
         max-width: 100%;
+        text-align: center;
     }
 
     ul {
         display: block;
         max-width: 100%;
         margin: 0 auto;
+        justify-content: center;
     }
 
     .box {
