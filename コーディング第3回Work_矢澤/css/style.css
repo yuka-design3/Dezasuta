@@ -48,19 +48,12 @@ body {
 
 .title {
     color: #398072;
-    width: 960px;
-    margin: 0 auto;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.item-img {
-    margin: 0 auto;
-}
-
 .box {
-    background-color: #eee;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -72,29 +65,23 @@ ul {
 
 ul li {
     background-color: white;
+    width: 32%;
 }
 
 .content-title {
     border-left: 10px solid #398072;
     padding: 10px 0;
+    margin: 10px;
+    color: #398072;
 }
 
 p {
-    padding: 0 10px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    padding: 0 10px 10px;
     font-size: 0.9em;
     font-weight: 500;
 }
 
 @media screen and (max-width: 400px) {
-    .title {
-        justify-content: center;
-        max-width: 100%;
-        text-align: center;
-    }
-
     ul {
         display: block;
         max-width: 100%;
@@ -102,8 +89,18 @@ p {
         justify-content: center;
     }
 
+    ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    ul li img {
+        width: 100%;
+    }
+
     .box {
         margin: 0 auto;
+        padding: 0 10px;
     }
 
     img {
