@@ -12,7 +12,7 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="header_slider">
             <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
         </div>
@@ -22,9 +22,9 @@
                 <ul>
                     <li><a href="#about">ABOUT US</a></li>
                     <li><a href="#menu">MENU</a></li>
-                    <li><a href="gallery">GALLERY</a></li>
-                    <li><a href="event">EVENT</a></li>
-                    <li><a href="access">ACCESS</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="about_message">
-                    <h2>
+                    <h2 class="about_title">
                         <img src="images/about_us@2x.png" alt="ABOUT US">
                     </h2>
                     <p class="message_title">私たちが提供する<br>こだわりのコーヒー</p>
@@ -119,11 +119,17 @@
                 <img src="images/event@2x.png" alt="EVENT">
             </h2>
 
-            <div class="box1">
+            <div class="event_list">
                 <ul>
-                    <li><span class="date">2020.06.23</span><span class="news">7月はイベント出店のため0/0お休みします</span></li>
-                    <li><span class="date">2020.03.15</span><span class="news">春の新商品新発売。話題のあのブランドとコラボ</span></li>
-                    <li><span class="date">2020.02.06</span><span class="news">コーヒーの日で30％OFFイベントを開催［3日間限定］</span>
+                    <li>
+                        <span><time datetime="2020-06-23">2020.06.23</time></span><a href="">7月はイベント出店のため0/0お休みします</a>
+                    </li>
+                    <li>
+                        <span><time datetime="2020-03-15">2020.03.15</time></span><a href="">春の新商品新発売。話題のあのブランドとコラボ</a>
+                    </li>
+                    <li>
+                        <span><time datetime="2020-02-06">2020.02.06</time></span><a
+                            href="">コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
                     </li>
                 </ul>
             </div>
@@ -149,17 +155,18 @@
 
     <footer>
         <div class="footer_wrap">
-            <h2 class="footer_logo">
+            <div class="footer_logo">
                 <img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE">
-            </h2>
+            </div>
             <div class="footer_block">
                 <div class="footer_date">OPEN 18:00 / CLOSE 24:00</div>
                 <address class="footer_address">
                     〒110-0005
                     <br>
                     東京都台東区上野7丁目1-1 改札外）2階 エキュート上野
+                    <br>
+                    MAIL：info@designcafe.tokyo
                 </address>
-                <p>MAIL：info@designcafe.tokyo</p>
             </div>
 
         </div>
@@ -167,7 +174,7 @@
         <p class="footer_copyright">© 2021 DESIGN CAFE</p>
 
         <div class="pagetop">
-            <a href="#header" style="position: fixed; bottom: 40px;">
+            <a href="#header">
                 <img src="images/to_top@2x.png" alt="TOPPAGE">
             </a>
         </div>

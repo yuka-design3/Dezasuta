@@ -46,19 +46,22 @@ ul {
 img {
     max-width: 100%;
     vertical-align: bottom;
-    border: none;
 }
 
-.lead,
-.about,
-.menu,
-.gallery,
-.event,
-.access {
+h2 {
+    margin: 0 auto;
+    padding: 100px 0 45px;
+}
+
+main {
     background-color: #e8d9bf;
 }
 
 /* ヘッダー */
+
+.header_slider img {
+    width: 100%;
+}
 
 .header_wrap {
     position: absolute;
@@ -94,7 +97,7 @@ img {
 /* キャッチコピー */
 
 .lead {
-    margin-top: 106px;
+    padding: 106px;
     text-align: center;
 }
 
@@ -109,44 +112,46 @@ img {
 
 .lead2 {
     font-size: 82px;
-    line-height: 1.17em;
-    padding-top: 72px;
-    padding-bottom: 50px;
+    line-height: 1.17;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .lead3 {
     font-size: 23px;
-    line-height: 1.65em;
+    line-height: 1.65;
 }
 
 /* ABOUT US */
 
 .about {
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .about_block {
-    width: 1000px;
+    max-width: 1000px;
+    justify-content: space-between;
     display: flex;
     margin: 0 auto;
 }
 
 .about_visual {
-    width: 500px;
+    width: 50%;
 }
 
 .about_visual img {
     border-bottom-right-radius: 82px;
 }
 
-h2 {
+.about_title {
     width: 272px;
     padding: 68px 0;
+    margin-left: 0;
 }
 
 .about_message {
     width: 42%;
-    padding-left: 80px;
+    padding-right: 10px;
 }
 
 .message_title {
@@ -157,7 +162,7 @@ h2 {
 
 .message_description {
     font-size: 16px;
-    line-height: 1.62em;
+    line-height: 1.62;
 }
 
 /* MENU */
@@ -174,30 +179,33 @@ h2 {
 
 .menu_flex {
     display: flex;
+    justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 .menu_block {
-    width: 100%;
+    width: 30%;
 }
 
 .menu_block img {
     border-top-right-radius: 42px;
 }
 
-h3 {
+.menu_block h3 {
     font-size: 38px;
     line-height: 0.57em;
     color: #d30202;
     margin-top: -5px;
     margin-bottom: 24px;
+    padding-left: 12px;
+    font-weight: normal;
 }
 
 .menu_texts {
     font-size: 17px;
-    line-height: 1.47em;
+    line-height: 1.47;
 }
 
 /* GALLERY */
@@ -212,31 +220,31 @@ h3 {
 
 /* EVENT */
 
+.event {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 .event_title {
     width: 174px;
 }
 
-.box1 {
-    width: 1000px;
-    height: 200px;
+.event_list {
+    display: flex;
+    justify-content: center;
+    padding: 36px;
     background-color: white;
-    margin: 0 auto;
     border: solid 3.8px #4f260b;
 }
 
-.box1 ul {
-    width: 666px;
-    margin: 0 auto;
-    margin: 40px 15% 40px 16%;
-}
-
-.box1 ul li {
+.event_list ul li {
     font-size: 23px;
     padding: 12px 0;
 }
 
-.news {
-    padding-left: 4.8%;
+.event_list ul li a {
+    padding-left: 55px;
+    text-decoration: underline;
 }
 
 /* ACCESS */
@@ -245,41 +253,47 @@ h3 {
     width: 213px;
 }
 
-.map {
-    text-align: center;
+.map iframe {
+    display: block;
+    height: 470px;
     width: 100%;
 }
 
 /* フッター */
 
 footer {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .footer_wrap {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 76px;
+    padding-left: 10px;
 }
 
 .footer_logo {
-    font-size: 52px;
+    width: 226px;
+    margin-right: 60px;
 }
 
 .footer_block {
     font-size: 20px;
-    line-height: 1.8em;
+    line-height: 2;
     color: black;
+}
+
+.footer_address {
+    font-style: normal;
 }
 
 .footer_copyright {
     text-align: center;
-}
-
-.footer_copyright {
     margin: 78px 0;
+    color: black;
 }
 
 .pagetop {
+    position: fixed;
+    bottom: 40px;
     right: 40px;
 }
