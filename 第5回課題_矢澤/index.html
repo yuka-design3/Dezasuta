@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェのサイトです。">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -17,8 +21,14 @@
         <div class="header_slider">
             <div>
                 <picture>
-                    <source srcset="images/sp_main_vs_2@2x-100.jpg" media="(max-width:767px)">
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
                     <img src="images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="images/sp_main_vs_2@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/slider_2.jpg" alt="店内の様子">
                 </picture>
             </div>
         </div>
@@ -38,7 +48,7 @@
         <div class="sp_btn"><span></span></div>
         <nav class="sp_nav">
             <ul>
-                <li><a href="#sp_about">ABOUT US</a></li>
+                <li><a href="#about">ABOUT US</a></li>
                 <li><a href="#menu">MENU</a></li>
                 <li><a href="#gallery">GALLERY</a></li>
                 <li><a href="#event">EVENT</a></li>
@@ -62,14 +72,15 @@
 
         <!-- ABOUT US -->
         <section id="about" class="about">
-            <div class="about_block pc_only">
+            <div class="about_block">
                 <div class="about_visual">
-                    <img src="images/pc_about-100.jpg" alt="ABOUTの写真">
+                    <img src="images/pc_about-100.jpg" alt="コーヒーを持つ人たち">
                 </div>
                 <div class="about_message">
                     <h2 class="about_title">
                         <img src="images/about_us@2x.png" alt="ABOUT US">
                     </h2>
+                    <div class="about_visual_sp"> <img src="images/about_us@2x-100.jpg" alt="コーヒーを持つ人たち"></div>
                     <p class="message_title">私たちが提供する<br>こだわりのコーヒー</p>
                     <p class="message_description">
                         サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
@@ -77,7 +88,7 @@
                 </div>
             </div>
 
-            <div class="about sp_only">
+            <!-- <div class="about sp_only">
                 <h2 class="about_title sp_only">
                     <img src="images/about_us@2x.png" alt="ABOUT US">
                 </h2>
@@ -90,7 +101,8 @@
                         サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
                     </p>
                 </div>
-            </div>
+            </div> -->
+
         </section>
 
 
@@ -111,7 +123,7 @@
                 <div class="menu_block">
                     <img src="images/pc_menu_food-100.jpg" alt="Food">
                     <h3>Food</h3>
-                    footer_wrap sp_only <p class="menu_texts">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                    <p class="menu_texts">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </div>
 
                 <div class="menu_block">
@@ -234,6 +246,13 @@
             $('.sp_btn, .sp_nav li').on('click', function () {
                 $('.sp_btn').toggleClass('open');
                 $('.sp_nav').fadeToggle();
+            });
+
+            $('.header_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
             });
         });
     </script>

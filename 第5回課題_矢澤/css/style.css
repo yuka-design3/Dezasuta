@@ -48,6 +48,10 @@ img {
     vertical-align: bottom;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h2 {
     margin: 0 auto;
     padding: 100px 0 45px;
@@ -92,6 +96,19 @@ main {
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
         "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     text-align: center;
+}
+
+/* スライダー調整 */
+.slick-dots {
+    bottom: 20px;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
 
 .sp_btn,
@@ -233,6 +250,10 @@ main {
     width: 272px;
     padding: 60px 0 40px;
     margin-left: 0;
+}
+
+.about_visual_sp {
+    display: none;
 }
 
 .about_message {
@@ -417,10 +438,18 @@ footer {
         display: none;
     }
 
+    h2 {
+        padding: 0 0 15px;
+    }
+    /* ヘッダー */
+    .header_logo {
+        width: 187px;
+    }
+
     /* キャッチコピーsp */
 
     .lead {
-        padding: 40px 0;
+        padding: 40px 0 0;
         text-align: center;
     }
 
@@ -432,6 +461,7 @@ footer {
         font-size: 38px;
         line-height: 1.15;
         padding-top: 22px;
+        padding-bottom: 15px;
         letter-spacing: 0.02em;
     }
 
@@ -439,6 +469,28 @@ footer {
         font-size: 16px;
         line-height: 1.87;
         letter-spacing: 0.1em;
+    }
+    /* ABOUT */
+
+    .about {
+        margin-top: 0;
+    }
+    .about_visual {
+        display: none;
+    }
+
+    .about_message {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .about_title {
+        width: 160px;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+    .about_visual_sp {
+        display: block;
     }
 
     /* ABOUT sp */
@@ -450,6 +502,10 @@ footer {
         width: 100px;
     }
 
+    .about_visual_sp img {
+        width: 100%;
+    }
+
     .about_visual img {
         border-radius: 0;
     }
@@ -459,20 +515,26 @@ footer {
     }
 
     .message_title {
-        font-size: 35px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        font-size: 36px;
         line-height: 1.25;
         text-align: left;
     }
     .message_description {
+        padding: 0 20px;
         text-align: left;
     }
 
     /* MENU */
+    .menu_title {
+        width: 87px;
+        padding-top: 40px;
+    }
+
     .menu_flex {
         display: block;
-        max-width: 100%;
-        margin: 0 auto;
-        justify-content: center;
         padding: 0 40px;
     }
 
@@ -485,14 +547,14 @@ footer {
     }
 
     .menu_block {
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
 
     .menu_block h3 {
         font-size: 40px;
         line-height: 0.55;
         margin-top: -5px;
-        margin-bottom: 24px;
+        margin-bottom: 30px;
         padding-left: 12px;
         font-weight: normal;
     }
@@ -502,6 +564,10 @@ footer {
     }
 
     /* GALLERY */
+    .gallery_title {
+        width: 142px;
+        padding-top: 40px;
+    }
     .gallery_photo .pc_only ul {
         display: none;
     }
@@ -509,16 +575,69 @@ footer {
         max-width: 100%;
     }
 
+    .gallery_photo img {
+        width: 100%;
+    }
+
     /* EVENT */
+    .event {
+        padding: 0 20px;
+    }
+
+    .event_title {
+        width: 100px;
+        padding-top: 40px;
+    }
+
+    .event_list {
+        display: block;
+        padding: 20px 28px;
+    }
+    .event_list ul li {
+        font-size: 16px;
+    }
+
     .event_list ul li a {
+        display: block;
         padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* ACCESS */
+    .title_access {
+        width: 124px;
+        padding-top: 40px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 190px;
     }
 
     /* FOOTER */
     .footer_wrap {
         display: block;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .footer_block {
+        font-size: 18px;
+        line-height: 1.72;
     }
     .footer_date {
-        padding-top: 35px;
+        padding-top: 20px;
+    }
+
+    .pagetop {
+        width: 100px;
+        bottom: 15px;
+        right: 15px;
+    }
+    /* フッター */
+    .footer_copyright {
+        margin: 36px auto 32px;
     }
 }
