@@ -10,9 +10,13 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- lightbox2 css モーダルウィンドウ-->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- lightbox2 js モーダルウィンドウ-->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
 </head>
 
 <body>
@@ -142,7 +146,91 @@
                 <img src="images/gallery@2x.png" alt="GALLERY">
             </h2>
 
-            <div class="gallery_photo pc_only">
+            <!-- lightbox2 モーダルウィンドウ記述 -->
+            <div class="gallery_slider">
+                <div>
+                    <a href="images/pc_gallary_01-100.jpg" data-lightbox="image-1" data-title="店内の様子1">
+                        <img src="images/pc_gallary_01-100.jpg" alt="ギャラリー1"></a>
+                </div>
+                <div>
+                    <a href="images/pc_gallary_02-100.jpg" data-lightbox="image-1" data-title="店内の様子2">
+                        <img src="images/pc_gallary_02-100.jpg" alt="ギャラリー2"></a>
+                </div>
+                <div>
+                    <a href="images/pc_gallary_03-100.jpg" data-lightbox="image-1" data-title="店内の様子3">
+                        <img src="images/pc_gallary_03-100.jpg" alt="ギャラリー3"></a>
+                </div>
+                <div>
+                    <a href="images/pc_gallary_04-100.jpg" data-lightbox="image-1" data-title="店内の様子4">
+                        <img src="images/pc_gallary_04-100.jpg" alt="ギャラリー4"></a>
+                </div>
+                <div>
+                    <a href="images/pc_gallary_05-100.jpg" data-lightbox="image-1" data-title="店内の様子5">
+                        <img src="images/pc_gallary_05-100.jpg" alt="ギャラリー5"></a>
+                </div>
+                <div>
+                    <a href="images/pc_gallary_01-100.jpg" data-lightbox="image-1" data-title="店内の様子6">
+                        <img src="images/pc_gallary_01-100.jpg" alt="ギャラリー6"></a>
+                </div>
+                <div>
+                    <a href="images/pc_gallary_02-100.jpg" data-lightbox="image-1" data-title="店内の様子7">
+                        <img src="images/pc_gallary_02-100.jpg" alt="ギャラリー7"></a>
+                </div>
+                <div>
+                    <a href="images/pc_gallary_03-100.jpg" data-lightbox="image-1" data-title="店内の様子8">
+                        <img src="images/pc_gallary_03-100.jpg" alt="ギャラリー8"></a>
+                </div>
+                <div>
+                    <a href="images/pc_gallary_04-100.jpg" data-lightbox="image-1" data-title="店内の様子9">
+                        <img src="images/pc_gallary_04-100.jpg" alt="ギャラリー9"></a>
+                </div>
+                <div>
+                    <a href="images/pc_gallary_05-100.jpg" data-lightbox="image-1" data-title="店内の様子10">
+                        <img src="images/pc_gallary_05-100.jpg" alt="ギャラリー10"></a>
+                </div>
+            </div>
+
+            <!-- モーダルウィンドウにする前 -->
+            <!-- <div class="gallery_slider">
+                <div>
+                    <img src="images/pc_gallary_01-100.jpg" alt="ギャラリー1">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_02-100.jpg" alt="ギャラリー2">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_03-100.jpg" alt="ギャラリー3">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_04-100.jpg" alt="ギャラリー4">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_05-100.jpg" alt="ギャラリー5">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_01-100.jpg" alt="ギャラリー6">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_02-100.jpg" alt="ギャラリー7">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_03-100.jpg" alt="ギャラリー8">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_04-100.jpg" alt="ギャラリー9">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_05-100.jpg" alt="ギャラリー10">
+                </div>
+            </div> -->
+
+
+
+            <!-- <a href="images/image-1.jpg" data-lightbox="image-1" data-title="My caption">Image #1</a> -->
+
+
+            <!--slicks化する前の記述 -->
+            <!-- <div class="gallery_photo">
                 <ul>
                     <li>
                         <img src="images/pc_gallary_05-100.jpg" alt="ギャラリー5">
@@ -160,13 +248,9 @@
                         <img src="images/pc_gallary_01-100.jpg" alt="ギャラリー1">
                     </li>
                 </ul>
-            </div>
-            <div class="gallery_photo sp_only">
-
-                <img src="images/pc_gallary_01-100.jpg" alt="ギャラリー">
+            </div> -->
 
 
-            </div>
         </section>
 
         <!-- EVEVT -->
@@ -253,6 +337,28 @@
                 autoplaySpeed: 2000,
                 dots: true,
                 arrows: false,
+            });
+
+            // GALLERYスライド
+            $('.gallery_slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                ]
+
+
+
+
             });
         });
     </script>

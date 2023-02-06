@@ -325,14 +325,68 @@ h2 {
     width: 245px;
 }
 
-.gallery_photo ul {
+.gallery_slider {
     display: flex;
 }
 
-.gallery_photo ul li,
-.gallery_photo ul li img {
+.gallery_slider img {
     width: 100%;
 }
+
+.gallery_slider {
+    position: relative;
+    color: #fff;
+}
+
+/*-----------矢印表示----------*/
+.slick-next {
+    right: 0 !important;
+}
+.slick-prev {
+    left: 0 !important;
+}
+.slick-arrow {
+    z-index: 2 !important;
+}
+
+.slick-arrow:before {
+    content: "" !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+    opacity: 1;
+    transform: rotate(315deg);
+}
+
+.slick-prev:before {
+    transform: rotate(315deg);
+}
+
+.slick-next:before {
+    transform: rotate(135deg);
+}
+
+.slick-next {
+    right: 22% !important;
+}
+
+.slick-prev {
+    left: 22% !important;
+}
+
+/* GALLERY モーダルウィンドウ */
+.lb-data .lb-number {
+    display: none !important;
+}
+
 /* EVENT */
 
 .event {
@@ -568,15 +622,26 @@ footer {
         width: 142px;
         padding-top: 40px;
     }
-    .gallery_photo .pc_only ul {
-        display: none;
-    }
-    .gallery_photo .sp_only {
-        max-width: 100%;
+    .gallery_slider {
+        display: block;
     }
 
-    .gallery_photo img {
+    .gallery_slider img {
         width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+    }
+
+    .slick-next {
+        right: 5% !important;
+    }
+
+    .slick-prev {
+        left: 5% !important;
     }
 
     /* EVENT */
