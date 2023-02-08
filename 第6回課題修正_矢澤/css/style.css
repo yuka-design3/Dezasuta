@@ -363,11 +363,11 @@ h2 {
     border-top: 5px solid #fff;
     border-left: 5px solid #fff;
     opacity: 1;
-    transform: rotate(315deg);
+    transform: rotate(-45deg);
 }
 
 .slick-prev:before {
-    transform: rotate(315deg);
+    transform: rotate(-45deg);
 }
 
 .slick-next:before {
